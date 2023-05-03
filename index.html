@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este é um projeto de cartão de aniversário simples, feito em HTML, CSS e JavaScript.">
+    <meta name="keywords" content="Feliz, Aniversario">
+    <meta name="author" content="Paulo Henrique @Marshall.Liu_ @Marshallliu_ ">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>Feliz Aniversario</title>
+</head>
+<body>
+    <div class="dialog-birthday_message">
+  <div id="birthday_container" class="birthday_container">
+  <div class="balloons">
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+  </div>
+  <p class="multText"></p> 
+  <canvas id="canvas_confetti" width="600px" height="400px"></canvas>
+  <button id="baloon" onclick="playAudio()">🎉</button>
+  <audio id="myAudio"  src="./Good_Morning_to_All.mp3"></audio>
+
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+<script src="./index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+           <script>
+                var typingEffect = new Typed(".multText", {
+                strings: ["Feliz Aniversario 🎉 Marshall!!"," o Futuro dos Progamas.", "Feliz Aniversario 🎉 Marshall!!✨ o Futuro  dos Progamas."],
+                loop:false,
+                typeSpeed: 100,
+                backSpeed:80,
+                backDelay: false,
+                });
+                
+  </script>
+    
+</body>
+</html>
